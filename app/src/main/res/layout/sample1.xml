@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<com.mycode.myswipelayout.Swipe
+<com.daimajia.swipe.SwipeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -9,32 +9,55 @@
 
     <LinearLayout
         android:tag="Bottom1"
-        android:background="#b12d2d"
+        android:background="#66ddff00"
         android:id="@+id/bottom_wrapper"
-        android:layout_width="wrap_content"
+        android:layout_width="160dp"
         android:weightSum="1"
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_margin="10dp"
             android:id="@+id/archive"
             android:textColor="#fff"
-            android:text="Archive!!!!!"
+            android:text="Archive"
             android:layout_weight="0.5"
             android:gravity="center"
             android:clickable="true"
-            android:background="#b12d2d"
+            android:background="#ac4e4e"
             android:layout_width="wrap_content"
             android:layout_height="match_parent" />
 
-        <!--<TextView-->
-            <!--android:id="@+id/delete"-->
-            <!--android:text="Delete"-->
-            <!--android:background="#C7C7CC"-->
-            <!--android:gravity="center"-->
-            <!--android:layout_weight="0.5"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="match_parent" />-->
+        <TextView
+            android:id="@+id/delete"
+            android:text="Delete"
+            android:background="#C7C7CC"
+            android:gravity="center"
+            android:layout_weight="0.5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <com.mycode.myswipelayout.Swipe
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:tag="Bottom3"
+            android:id="@+id/starbott1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:id="@+id/bottom_wrapper_child12"
+                android:background="#ac4e4e"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="#ac4e4e"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp" />
+            </RelativeLayout>
+        </LinearLayout>
+        </com.mycode.myswipelayout.Swipe>
     </LinearLayout>
 
     <LinearLayout
@@ -45,6 +68,7 @@
 
         <ImageView
             android:id="@+id/magnifier2"
+            android:src="#ac4e4e"
             android:layout_width="70dp"
             android:background="#f7e79c"
             android:paddingLeft="25dp"
@@ -53,7 +77,7 @@
 
         <ImageView
             android:id="@+id/star2"
-            android:src="#fff"
+            android:src="#ac4e4e"
             android:layout_width="70dp"
             android:background="#4cd964"
             android:paddingLeft="25dp"
@@ -62,7 +86,9 @@
 
         <ImageView
             android:id="@+id/trash2"
+            android:src="#ac4e4e"
             android:layout_width="70dp"
+            android:background="#ac4e4e"
             android:paddingLeft="25dp"
             android:paddingRight="25dp"
             android:layout_height="match_parent" />
@@ -75,7 +101,7 @@
         android:layout_height="match_parent">
         <RelativeLayout
             android:id="@+id/bottom_wrapper_child1"
-            android:background="#c41616"
+            android:background="#ac4e4e"
             android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
@@ -83,20 +109,19 @@
                 android:id="@+id/star"
                 android:layout_alignParentTop="true"
                 android:layout_centerHorizontal="true"
-                android:src="#8c4040"
+                android:src="#ac4e4e"
                 android:layout_width="20dp"
                 android:layout_height="20dp" />
         </RelativeLayout>
     </LinearLayout>
 
     <TextView
-        android:id="@+id/color"
         android:padding="10dp"
-        android:background="#fff3f3"
+        android:background="#ffee6f"
         android:tag="Hover"
         android:textAlignment="center"
         android:text="DA"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-</com.mycode.myswipelayout.Swipe>
+</com.daimajia.swipe.SwipeLayout>

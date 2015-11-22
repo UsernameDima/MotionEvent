@@ -1,19 +1,57 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<com.daimajia.swipe.SwipeLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/godfather"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+    <!--<ImageView-->
+        <!--android:layout_gravity="left|right|top"-->
+        <!--android:src="#c95858"-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="100dp" />-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/bird_bottom"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<ImageView-->
+            <!--android:src="#c95858"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<include layout="@layout/sample_together" android:layout_width="match_parent" android:layout_height="match_parent"/>-->
+        <!--<ImageView-->
+            <!--android:src="#c95858"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="60dp"-->
+            <!--android:layout_width="65dp"-->
+            <!--android:layout_height="65dp" />-->
+    <!--</RelativeLayout>-->
+<RelativeLayout
     android:id="@+id/move"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
     <ImageView
-    android:id="@+id/ImageView"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_centerHorizontal="true"
-    android:src="@mipmap/ic_launcher" />
-    <ImageView
-        android:id="@+id/ImageView1"
+        android:id="@+id/ImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
-        android:layout_below="@+id/ImageView"
-        android:layout_alignLeft="@+id/ImageView"
-        android:layout_alignStart="@+id/ImageView" />
-</RelativeLayout>
+        android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/ImageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DA!!!"
+            android:textAlignment="center"/>
+
+    </RelativeLayout>
+<!--</com.daimajia.swipe.SwipeLayout>-->
+
